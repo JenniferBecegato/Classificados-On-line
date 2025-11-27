@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anunciar Carro - AutoClassi</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>🚗 AutoClassi</h1>
+                    <span class="tagline">Seu carro novo está aqui!</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="anuncios.html">Ver Anúncios</a></li>
+                    <li><a href="cadastrar.html" class="active">Anunciar Carro</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Anunciar Veículo</h1>
+                <p>Preencha o formulário abaixo para cadastrar seu anúncio</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <div class="success-message" id="successMessage">
+                    ✅ Anúncio cadastrado com sucesso! Em breve seu veículo estará disponível para visualização.
+                </div>
+
+                <form class="ad-form" id="adForm">
+                    <h2 style="margin-bottom: 30px; color: var(--primary-color);">Dados do Veículo</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="marca">Marca *</label>
+                            <select id="marca" name="marca" required>
+                                <option value="">Selecione a marca</option>
+                                <option value="chevrolet">Chevrolet</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="ford">Ford</option>
+                                <option value="honda">Honda</option>
+                                <option value="hyundai">Hyundai</option>
+                                <option value="jeep">Jeep</option>
+                                <option value="nissan">Nissan</option>
+                                <option value="peugeot">Peugeot</option>
+                                <option value="renault">Renault</option>
+                                <option value="toyota">Toyota</option>
+                                <option value="volkswagen">Volkswagen</option>
+                                <option value="outra">Outra</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="modelo">Modelo *</label>
+                            <input type="text" id="modelo" name="modelo" placeholder="Ex: Civic EXL" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ano">Ano *</label>
+                            <select id="ano" name="ano" required>
+                                <option value="">Selecione o ano</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quilometragem">Quilometragem *</label>
+                            <input type="number" id="quilometragem" name="quilometragem" placeholder="Ex: 25000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="combustivel">Combustível *</label>
+                            <select id="combustivel" name="combustivel" required>
+                                <option value="">Selecione</option>
+                                <option value="flex">Flex</option>
+                                <option value="gasolina">Gasolina</option>
+                                <option value="alcool">Álcool</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="eletrico">Elétrico</option>
+                                <option value="hibrido">Híbrido</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cambio">Câmbio *</label>
+                            <select id="cambio" name="cambio" required>
+                                <option value="">Selecione</option>
+                                <option value="automatico">Automático</option>
+                                <option value="manual">Manual</option>
+                                <option value="cvt">CVT</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cor">Cor *</label>
+                            <select id="cor" name="cor" required>
+                                <option value="">Selecione a cor</option>
+                                <option value="branco">Branco</option>
+                                <option value="preto">Preto</option>
+                                <option value="prata">Prata</option>
+                                <option value="cinza">Cinza</option>
+                                <option value="vermelho">Vermelho</option>
+                                <option value="azul">Azul</option>
+                                <option value="marrom">Marrom</option>
+                                <option value="outra">Outra</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="categoria">Categoria *</label>
+                            <select id="categoria" name="categoria" required>
+                                <option value="">Selecione</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="hatch">Hatch</option>
+                                <option value="suv">SUV</option>
+                                <option value="picape">Picape</option>
+                                <option value="esportivo">Esportivo</option>
+                                <option value="van">Van</option>
+                                <option value="utilitario">Utilitário</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Preço (R$) *</label>
+                        <input type="number" id="preco" name="preco" placeholder="Ex: 85000" required>
+                        <small>Digite apenas números, sem pontos ou vírgulas</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição do Veículo *</label>
+                        <textarea id="descricao" name="descricao" placeholder="Descreva os opcionais, estado de conservação, histórico de manutenção e outras informações relevantes do veículo..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fotos do Veículo</label>
+                        <div class="file-input">
+                            <input type="file" id="fotos" name="fotos" accept="image/*" multiple>
+                            <label for="fotos">📷 Clique para adicionar fotos</label>
+                            <small style="display: block; margin-top: 10px;">Adicione até 10 fotos (JPG, PNG). Máximo 5MB por foto.</small>
+                        </div>
+                    </div>
+
+                    <h2 style="margin: 40px 0 30px; color: var(--primary-color);">Dados do Vendedor</h2>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cidade">Cidade *</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado *</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 30px;">
+                        <label style="display: flex; align-items: center; gap: 10px; font-weight: normal;">
+                            <input type="checkbox" name="termos" required>
+                            Li e aceito os <a href="#" style="color: var(--primary-color);">Termos de Uso</a> e a <a href="#" style="color: var(--primary-color);">Política de Privacidade</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Publicar Anúncio</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🚗 AutoClassi</h3>
+                    <p>A melhor plataforma de classificados de veículos do Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="anuncios.html">Ver Anúncios</a></li>
+                        <li><a href="cadastrar.html">Anunciar</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@autoclassi.com.br</li>
+                        <li>📞 (11) 99999-9999</li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoClassi - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('adForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('successMessage').classList.add('show');
+            this.reset();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

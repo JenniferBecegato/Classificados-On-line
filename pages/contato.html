@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - AutoClassi</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>🚗 AutoClassi</h1>
+                    <span class="tagline">Seu carro novo está aqui!</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="anuncios.html">Ver Anúncios</a></li>
+                    <li><a href="cadastrar.html">Anunciar Carro</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Estamos aqui para ajudar você</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <ul>
+                            <li>
+                                <span>📧</span>
+                                <div>
+                                    <strong>E-mail</strong><br>
+                                    contato@autoclassi.com.br
+                                </div>
+                            </li>
+                            <li>
+                                <span>📞</span>
+                                <div>
+                                    <strong>Telefone</strong><br>
+                                    (11) 99999-9999
+                                </div>
+                            </li>
+                            <li>
+                                <span>📍</span>
+                                <div>
+                                    <strong>Endereço</strong><br>
+                                    Av. Paulista, 1000 - São Paulo, SP
+                                </div>
+                            </li>
+                            <li>
+                                <span>🕐</span>
+                                <div>
+                                    <strong>Horário de Atendimento</strong><br>
+                                    Segunda a Sexta: 9h às 18h<br>
+                                    Sábado: 9h às 13h
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div style="margin-top: 30px;">
+                            <h4 style="margin-bottom: 15px;">Siga-nos nas redes sociais</h4>
+                            <div class="social-links">
+                                <a href="#" title="Facebook" style="font-size: 2rem;">📘</a>
+                                <a href="#" title="Instagram" style="font-size: 2rem;">📷</a>
+                                <a href="#" title="Twitter" style="font-size: 2rem;">🐦</a>
+                                <a href="#" title="YouTube" style="font-size: 2rem;">▶️</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Envie sua Mensagem</h3>
+                        <div class="success-message" id="contactSuccess">
+                            ✅ Mensagem enviada com sucesso! Retornaremos em breve.
+                        </div>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto *</label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="">Selecione o assunto</option>
+                                    <option value="duvida">Dúvida sobre anúncio</option>
+                                    <option value="problema">Problema técnico</option>
+                                    <option value="sugestao">Sugestão</option>
+                                    <option value="parceria">Parceria comercial</option>
+                                    <option value="outro">Outro assunto</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 40px 0; background: var(--white);">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="margin-bottom: 20px; padding: 20px; background: var(--bg-color); border-radius: 8px;">
+                        <h4 style="margin-bottom: 10px; color: var(--primary-color);">Como anunciar meu carro?</h4>
+                        <p style="color: var(--text-light);">Clique em "Anunciar Carro" no menu, preencha o formulário com os dados do veículo e suas informações de contato. É simples e rápido!</p>
+                    </div>
+                    <div style="margin-bottom: 20px; padding: 20px; background: var(--bg-color); border-radius: 8px;">
+                        <h4 style="margin-bottom: 10px; color: var(--primary-color);">Quanto custa para anunciar?</h4>
+                        <p style="color: var(--text-light);">Os anúncios básicos são totalmente gratuitos! Oferecemos também planos premium para destacar seu veículo.</p>
+                    </div>
+                    <div style="margin-bottom: 20px; padding: 20px; background: var(--bg-color); border-radius: 8px;">
+                        <h4 style="margin-bottom: 10px; color: var(--primary-color);">Por quanto tempo o anúncio fica ativo?</h4>
+                        <p style="color: var(--text-light);">Os anúncios ficam ativos por 30 dias e podem ser renovados gratuitamente quantas vezes desejar.</p>
+                    </div>
+                    <div style="padding: 20px; background: var(--bg-color); border-radius: 8px;">
+                        <h4 style="margin-bottom: 10px; color: var(--primary-color);">Como entro em contato com um vendedor?</h4>
+                        <p style="color: var(--text-light);">Ao visualizar o anúncio, você terá acesso aos dados de contato do vendedor para negociar diretamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🚗 AutoClassi</h3>
+                    <p>A melhor plataforma de classificados de veículos do Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="anuncios.html">Ver Anúncios</a></li>
+                        <li><a href="cadastrar.html">Anunciar</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@autoclassi.com.br</li>
+                        <li>📞 (11) 99999-9999</li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoClassi - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('contactSuccess').classList.add('show');
+            this.reset();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

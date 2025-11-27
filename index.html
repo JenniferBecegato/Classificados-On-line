@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoClassi - Classificados de Carros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🚗 AutoClassi</h1>
+                <span class="tagline">Seu carro novo está aqui!</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="pages/anuncios.html">Ver Anúncios</a></li>
+                    <li><a href="pages/cadastrar.html">Anunciar Carro</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Encontre o carro dos seus sonhos</h2>
+                <p>Milhares de veículos seminovos e usados esperando por você</p>
+                <div class="search-box">
+                    <form class="search-form">
+                        <select name="marca">
+                            <option value="">Marca</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="ford">Ford</option>
+                            <option value="honda">Honda</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volkswagen">Volkswagen</option>
+                        </select>
+                        <select name="ano">
+                            <option value="">Ano</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                        <select name="preco">
+                            <option value="">Faixa de Preço</option>
+                            <option value="ate30">Até R$ 30.000</option>
+                            <option value="30a50">R$ 30.000 - R$ 50.000</option>
+                            <option value="50a80">R$ 50.000 - R$ 80.000</option>
+                            <option value="80a100">R$ 80.000 - R$ 100.000</option>
+                            <option value="acima100">Acima de R$ 100.000</option>
+                        </select>
+                        <button type="button" class="btn-search">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-ads">
+            <div class="container">
+                <h2 class="section-title">Anúncios em Destaque</h2>
+                <div class="ads-grid">
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="images/carro1.svg" alt="Honda Civic 2022">
+                            <span class="ad-badge">Destaque</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3>Honda Civic EXL 2022</h3>
+                            <p class="ad-price">R$ 145.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2022</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 25.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 São Paulo, SP</p>
+                            <a href="pages/anuncios.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="images/carro2.svg" alt="Toyota Corolla 2023">
+                            <span class="ad-badge">Novo</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3>Toyota Corolla XEi 2023</h3>
+                            <p class="ad-price">R$ 158.900</p>
+                            <ul class="ad-specs">
+                                <li>📅 2023</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 12.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Rio de Janeiro, RJ</p>
+                            <a href="pages/anuncios.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="images/carro3.svg" alt="Volkswagen Golf 2021">
+                        </div>
+                        <div class="ad-content">
+                            <h3>Volkswagen Golf TSI 2021</h3>
+                            <p class="ad-price">R$ 98.500</p>
+                            <ul class="ad-specs">
+                                <li>📅 2021</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 35.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Curitiba, PR</p>
+                            <a href="pages/anuncios.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="images/carro4.svg" alt="Chevrolet Onix 2022">
+                        </div>
+                        <div class="ad-content">
+                            <h3>Chevrolet Onix Premier 2022</h3>
+                            <p class="ad-price">R$ 72.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2022</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 18.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Belo Horizonte, MG</p>
+                            <a href="pages/anuncios.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="view-all">
+                    <a href="pages/anuncios.html" class="btn-primary">Ver Todos os Anúncios</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Categorias</h2>
+                <div class="categories-grid">
+                    <a href="pages/anuncios.html" class="category-card">
+                        <span class="category-icon">🚗</span>
+                        <h3>Sedans</h3>
+                        <p>125 anúncios</p>
+                    </a>
+                    <a href="pages/anuncios.html" class="category-card">
+                        <span class="category-icon">🚙</span>
+                        <h3>SUVs</h3>
+                        <p>89 anúncios</p>
+                    </a>
+                    <a href="pages/anuncios.html" class="category-card">
+                        <span class="category-icon">🛻</span>
+                        <h3>Picapes</h3>
+                        <p>67 anúncios</p>
+                    </a>
+                    <a href="pages/anuncios.html" class="category-card">
+                        <span class="category-icon">🏎️</span>
+                        <h3>Esportivos</h3>
+                        <p>34 anúncios</p>
+                    </a>
+                    <a href="pages/anuncios.html" class="category-card">
+                        <span class="category-icon">🚐</span>
+                        <h3>Vans</h3>
+                        <p>23 anúncios</p>
+                    </a>
+                    <a href="pages/anuncios.html" class="category-card">
+                        <span class="category-icon">🏍️</span>
+                        <h3>Motos</h3>
+                        <p>156 anúncios</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Quer vender seu carro?</h2>
+                    <p>Anuncie grátis e alcance milhares de compradores!</p>
+                    <a href="pages/cadastrar.html" class="btn-cta">Anunciar Agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🚗 AutoClassi</h3>
+                    <p>A melhor plataforma de classificados de veículos do Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pages/anuncios.html">Ver Anúncios</a></li>
+                        <li><a href="pages/cadastrar.html">Anunciar</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@autoclassi.com.br</li>
+                        <li>📞 (11) 99999-9999</li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoClassi - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

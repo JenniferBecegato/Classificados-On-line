@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Anúncios - AutoClassi</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>🚗 AutoClassi</h1>
+                    <span class="tagline">Seu carro novo está aqui!</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="anuncios.html" class="active">Ver Anúncios</a></li>
+                    <li><a href="cadastrar.html">Anunciar Carro</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Anúncios de Veículos</h1>
+                <p>Encontre o carro ideal para você</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="container">
+                <form class="filters-form">
+                    <select name="marca">
+                        <option value="">Todas as Marcas</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="ford">Ford</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                    </select>
+                    <select name="ano">
+                        <option value="">Todos os Anos</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <select name="preco">
+                        <option value="">Qualquer Preço</option>
+                        <option value="ate30">Até R$ 30.000</option>
+                        <option value="30a50">R$ 30.000 - R$ 50.000</option>
+                        <option value="50a80">R$ 50.000 - R$ 80.000</option>
+                        <option value="80a100">R$ 80.000 - R$ 100.000</option>
+                        <option value="acima100">Acima de R$ 100.000</option>
+                    </select>
+                    <select name="categoria">
+                        <option value="">Todas as Categorias</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="hatch">Hatch</option>
+                        <option value="picape">Picape</option>
+                        <option value="esportivo">Esportivo</option>
+                    </select>
+                    <button type="button" class="btn-filter">Filtrar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="ads-listing">
+            <div class="container">
+                <p class="results-info">Exibindo 8 anúncios</p>
+                
+                <div class="ads-grid">
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro1.svg" alt="Honda Civic 2022">
+                            <span class="ad-badge">Destaque</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3>Honda Civic EXL 2022</h3>
+                            <p class="ad-price">R$ 145.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2022</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 25.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 São Paulo, SP</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro2.svg" alt="Toyota Corolla 2023">
+                            <span class="ad-badge">Novo</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3>Toyota Corolla XEi 2023</h3>
+                            <p class="ad-price">R$ 158.900</p>
+                            <ul class="ad-specs">
+                                <li>📅 2023</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 12.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Rio de Janeiro, RJ</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro3.svg" alt="Volkswagen Golf 2021">
+                        </div>
+                        <div class="ad-content">
+                            <h3>Volkswagen Golf TSI 2021</h3>
+                            <p class="ad-price">R$ 98.500</p>
+                            <ul class="ad-specs">
+                                <li>📅 2021</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 35.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Curitiba, PR</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro4.svg" alt="Chevrolet Onix 2022">
+                        </div>
+                        <div class="ad-content">
+                            <h3>Chevrolet Onix Premier 2022</h3>
+                            <p class="ad-price">R$ 72.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2022</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 18.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Belo Horizonte, MG</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro5.svg" alt="Fiat Pulse 2023">
+                            <span class="ad-badge">Novo</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3>Fiat Pulse Impetus 2023</h3>
+                            <p class="ad-price">R$ 115.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2023</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 8.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Porto Alegre, RS</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro6.svg" alt="Hyundai HB20 2022">
+                        </div>
+                        <div class="ad-content">
+                            <h3>Hyundai HB20 Platinum 2022</h3>
+                            <p class="ad-price">R$ 82.500</p>
+                            <ul class="ad-specs">
+                                <li>📅 2022</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 22.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Salvador, BA</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro7.svg" alt="Ford Ranger 2021">
+                        </div>
+                        <div class="ad-content">
+                            <h3>Ford Ranger Limited 2021</h3>
+                            <p class="ad-price">R$ 195.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2021</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 45.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Goiânia, GO</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="ad-card">
+                        <div class="ad-image">
+                            <img src="../images/carro8.svg" alt="Jeep Compass 2022">
+                            <span class="ad-badge">Destaque</span>
+                        </div>
+                        <div class="ad-content">
+                            <h3>Jeep Compass Limited 2022</h3>
+                            <p class="ad-price">R$ 168.000</p>
+                            <ul class="ad-specs">
+                                <li>📅 2022</li>
+                                <li>⚙️ Automático</li>
+                                <li>🛣️ 28.000 km</li>
+                            </ul>
+                            <p class="ad-location">📍 Recife, PE</p>
+                            <a href="detalhe.html" class="btn-details">Ver Detalhes</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🚗 AutoClassi</h3>
+                    <p>A melhor plataforma de classificados de veículos do Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="anuncios.html">Ver Anúncios</a></li>
+                        <li><a href="cadastrar.html">Anunciar</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@autoclassi.com.br</li>
+                        <li>📞 (11) 99999-9999</li>
+                        <li>📍 São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoClassi - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

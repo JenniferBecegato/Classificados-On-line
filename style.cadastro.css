@@ -1,0 +1,113 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+body{
+    background-color: #e3c6f8;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.marca {
+    font-size: 60px;
+    color: white;
+}
+
+#Toys {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b07ad;
+    width: 100%;
+    height: 150px;
+}
+
+.sobre,
+.inicio,
+.cadastro {
+    color: #fa9c20;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100px;
+    padding: 8px 8px 8px 8px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.sobre:hover,
+.inicio:hover,
+.cadastro:hover {
+    background-color: #9b4fd1;
+    color: #ff8c00;
+    border-radius: 8px;
+
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro {
+    display: flex;
+    width: 650px;
+    height: 450px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: #fff;
+    border: #6b07ad 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    color: #6b07ad;
+    font-size: 25px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.nome,.material {
+    font-size: 18px;
+    color: #6b07ad;
+    align-self: flex-start;
+    margin-left: 15px;
+    
+}
+
+.camponome {
+    width: 330px;
+    height: 30px;
+    border: #6b07ad 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+   
+    
+}
+.campomaterial {
+    width: 120px;
+    height: 30px;
+    border: #6b07ad 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+

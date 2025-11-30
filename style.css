@@ -3,6 +3,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+body{
+    background-color: #e3c6f8;
+}
 
 .logo {
     width: 100px;
@@ -58,4 +61,141 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.container-produtos {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 50px;
+    margin-left: 15px;
+    flex-wrap: wrap;
+}
+
+#filtros {
+    background-color: #fff;
+    width: 225px;
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+
+.Menorpreço,
+.Maisvendido{
+    color: #6b07ad;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: #6b07ad 2px solid;
+    border-radius: 8px;
+}
+
+.Menorpreço:hover,
+.Maisvendido:hover{
+    background-color: #ff8c00;
+    color: #6b07ad;
+    border-radius: 8px;
+}
+
+.brinquedo img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.brinquedo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+    background-color: #fff;
+    border: #6b07ad 1px solid;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+}
+.brinquedo img{
+    align-self: center;
+}
+.nomeproduto {
+    font-size: 16px;
+    font-weight: bold;
+}
+.valor {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.shopping img{
+    width: 28px;
+    height: 28px;
+    margin-top: 25px;
+    border: #0da80b 2px solid;
+    color: #fff ;
+    border-radius: 8px;
+}
+.shopping img:hover{
+    background-color: #89df88;
+    cursor: pointer;
+}
+.comprar{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+.valor {
+    flex: 0 0 auto;
+}
+.shopping {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.detalhes{
+    color: #fff;
+    background-color: #ff8c00;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 197px;
+    min-width: 197px;
+    height: 40px;
+   margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: #ff8c00 2px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+}
+.detalhes:hover{
+    background-color: #ffa31a;
+    color: #fff;
+    border-radius: 8px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#linha2{
+    display: flex;
+    gap: 80px;
+    margin-left: 324px;
+    
 }

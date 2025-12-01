@@ -66,10 +66,12 @@ body{
 .container-produtos {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     margin-top: 50px;
     margin-left: 15px;
+    padding-right: 15px;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 #filtros {
@@ -81,7 +83,7 @@ body{
     font-size: 18px;
     border-radius: 8px;
     font-weight: bold;
-
+    flex-shrink: 0;
 }
 
 .Menorpreço,
@@ -124,8 +126,10 @@ body{
     background-color: #fff;
     border: #6b07ad 1px solid;
     width: 200px;
+    min-width: 200px;
     height: 300px;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 .brinquedo img{
     align-self: center;
@@ -193,9 +197,17 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#linha2{
+
+.container {
     display: flex;
-    gap: 50px;
-    margin-left: 295px;
-    
+    flex-direction: row;
+    gap: 30px;
+}
+
+.posicionamento-cartas{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }

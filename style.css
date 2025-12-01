@@ -66,7 +66,7 @@ body{
 .container-produtos {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 50px;
     margin-top: 50px;
     margin-left: 15px;
     flex-wrap: wrap;
@@ -195,7 +195,7 @@ body{
 
 #linha2{
     display: flex;
-    gap: 80px;
-    margin-left: 324px;
+    gap: 50px;
+    margin-left: 295px;
     
 }

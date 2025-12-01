@@ -21,18 +21,20 @@
             <span class="nav-menu">
                 <a href="index.html" class="inicio">INÍCIO</a>
                 <a href="index.cadastro.html" class="cadastro">CADASTRO</a>
-                <a href="" class="sobre">SOBRE</a>
+                <a href="index.sobre.html" class="sobre">SOBRE</a>
             </span>
         </div>
+        <form id="formulário">
         <div id="cadastro">
             <h1>Cadastrar Brinquedo</h1>
             <span class="linha-1">
                 <label class="nome"> Nome: </label>
-                <input class="camponome" type="text" placeholder="Nome do Brinquedo"/>
+                <input class="camponome" type="text" placeholder="Nome do Brinquedo" required/>
                 <span>
                     <label class="material"> Material: </label>
-                    <select class="campomaterial" type="text" placeholder="Material do Brinquedo">
+                    <select class="campomaterial" type="text" placeholder="Material do Brinquedo" required>
                         <option></option>
+                        <option>Papelão</option>
                         <option>Plástico</option>
                         <option>Madeira</option>
                         <option>Metal</option>
@@ -40,10 +42,55 @@
                     </select>
                 </span>
             </span>
-            <p class="informações"> Preço: <input class="campo" type="text" placeholder="Preço do Brinquedo"/></p>
-            <p class="informações"> Descrição: <input class="campo" type="text" placeholder="Descrição do Brinquedo"/></p>
             
+            <span class="linha2">
+                    <div class="descrição">
+                        <label>Descrição:</label>
+                        <textarea id="caracteristicas" 
+                            name="caracteristicas" 
+                            rows="4" 
+                            maxlength="200"
+                            placeholder="Descreva o produto... (máx. 200 caracteres)" required></textarea>
+                    </div>
+                    <div class="genero-grupo">
+                        <label>Gênero:</label>
+                        <label><input type="radio" name="genero" value="masculino"/> Masculino</label>
+                        <label><input type="radio" name="genero" value="feminino"/> Feminino</label>
+                        <label><input type="radio" name="genero" value="unissex"/> Unissex</label>
+                    </div>
+                    <div class="faixaetária">
+                        <label>Faixa Etária:</label>
+                        <label><input type="radio" name="F.E" value="0+"/>0+</label>
+                        <label><input type="radio" name="F.E" value="3+"/>3+</label>
+                        <label><input type="radio" name="F.E" value="5+"/>5+</label>
+                        <label><input type="radio" name="F.E" value="8+"/>8+</label>
+                        <label><input type="radio" name="F.E" value="10+"/>10+</label>
+                        <label><input type="radio" name="F.E" value="12+"/>12+</label>
+
+                    </div>
+            </span>
+            <span>
+                <div class="categoria">
+                <label> Categoria:</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="eletronico"/>Eletrônico</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="educativo"/>Educativo</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="demontar"/>De montar</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="boneco"/>Boneco</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="artes"/>Artes</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="recreativo"/>Recreativo</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="esporte"/>Esporte</label>
+                <label><input type="checkbox" name="selecmaisdeum" value="outros"/>Outros</label>
+                </div>
+            </span>
+            <div class="preço-cadastro">
+                <label class="preco"> Preço: </label>
+                <input class="campopreco" type="text" placeholder="R$" required/>
+            </div>
+           <div id="botao">
+                <button class="botao-cadastrar" type="submit" onclick="alert('Brinquedo cadastrado com sucesso!')">Cadastrar</button>
+            </div>
         </div>
+        </form>
            
     </main>
 </body>
